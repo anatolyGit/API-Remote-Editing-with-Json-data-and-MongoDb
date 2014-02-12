@@ -27,10 +27,11 @@
 });*/
 
 $(function(){
-    $('#setupSave').click(function(){
+    /*$('#setupSave').click(function(){
 
        $('form').each(function() {
             this.reset();
         });
-    });
+    });*/
+
 });
