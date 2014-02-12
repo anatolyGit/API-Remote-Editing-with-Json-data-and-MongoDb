@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
+//= require autocomplete-rails
+//= require jquery.mobile
 //= require turbolinks
 //= require_tree .
 /*$('#').submit(function() {  
