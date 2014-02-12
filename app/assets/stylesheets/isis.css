@@ -1,0 +1,256 @@
+/* Template-specific stuff
+ *
+ * Customizations just for the template; these are not necessary for anything
+ * with disabling the responsiveness.
+ */
+
+/* Account for fixed navbar */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  min-width: 970px;
+}
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  max-width: none !important;
+  width: 970px;
+}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
+#receiving button{position: absolute;
+top:150px;
+right:20px;}
+
+.tab-content{border-style:solid;
+border-color:black;
+padding: 20px 20px 20px 20px;}
+
+#receiving .pull-right {
+width: 77px;
+}
+
+ form.pull-right.work {
+width: 30px !important;
+}
+
+
+.lots{padding-top: 20px;}
+
+
+th {padding-left: 10px;}
+
+
+.bigBox {border-style:solid;
+border-color:black;
+width: 365px;
+height: 244px;
+padding:10px 10px 10px 10px;}
+
+.graybox{border-style:solid;
+border-color:gray;
+background-color: gray;}
+
+
+.table-striped th,
+.table-striped td {width:100%;}
+
+
+
+
+
+
+
+
+/* incoming  css */
+
+
+.fade.in {
+opacity: 1;
+-webkit-transition: opacity .15s linear;
+transition: opacity .15s linear;
+}
+
+
+.modal {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1040;
+display: none;
+overflow: auto;
+overflow-y: scroll;
+}
+
+
+
+
+
+
+.modal.fade .modal-dialog {
+-webkit-transform: translate(0,-25%);
+-ms-transform: translate(0,-25%);
+transform: translate(0,-25%);
+-webkit-transition: -webkit-transform .3s ease-out;
+-moz-transition: -moz-transform .3s ease-out;
+-o-transition: -o-transform .3s ease-out;
+transition: transform .3s ease-out;
+}
+
+
+.modal-dialog {
+width: 600px;
+margin: 90px auto;
+}
+
+
+.modal-content {
+position: relative;
+background-color: #fff;
+border: 1px solid #999;
+border: 1px solid rgba(0,0,0,0.2);
+border-radius: 6px;
+outline: 0;
+-webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+background-clip: padding-box;
+}
+
+.modal-header {
+min-height: 16.428571429px;
+padding: 15px;
+border-bottom: 1px solid #e5e5e5;
+}
+
+
+.greenBox1 , .greenBox2 , .greenBox3, .greenBox4{background-color: green;}
+
+
+.greenBox2 {height:130px;}
+
+
+.greenBox2 p , .greenBox1 p, .greenBox4 {color:white;
+ font-size:  20px;
+  text-align:  center;}
+
+
+  .greenBox1{width:350px;
+  }
+
+
+.selected {display: none;}
+
+.greenBox3 {height:40px;}
+
+.bluebox{height:40px;
+background-color: #2d7bab;
+color:white;
+text-align: center;}
+
+.bluebox p{color:white}
+
+.greenBox4 {height:140px;}
+

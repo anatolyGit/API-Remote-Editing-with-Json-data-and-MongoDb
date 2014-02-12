@@ -1,0 +1,20 @@
+.boxMe{border-style:solid;
+border-color:#86888e;
+
+padding-left: 30px;
+padding-top: 20px;}
+
+.up{padding-bottom: 20px;
+width: 50%;}
+
+.blue{color: blue;
+font-size: 14px;
+font-weight: bold;}
+
+.row{margin-bottom: 10px;}
+
+.split{border-right-style:solid;}
+
+.light{background-color: #f6f6f6;}
+
+.container{width: 1000px;} 

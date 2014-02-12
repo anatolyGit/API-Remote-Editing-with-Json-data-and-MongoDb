@@ -1,0 +1,3 @@
+module SetupPageHelper
+
+end

@@ -1,0 +1,189 @@
+<div class="container">
+  <%= form_tag 'http://192.168.3.6:3003/processes', authenticity_token: 'cf50faa3fe97702ca1ae' do %>
+ 
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Incoming Analysis / Rework Setup Screen</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-6">
+        <%= label_tag 'Process Name' %>
+        <div class="form-group">
+          <%= text_field_tag 'process name',nil, class: 'form-control' %>
+        </div>
+      </div><!--end col-xs-6 -->
+      
+      <div class="col-xs-3"></div>
+
+      <div class="col-xs-3">
+        <%= label_tag 'Active' %>
+        <%= check_box_tag 'active', 'activation', false, class: 'checkbox' %>
+      </div><!--end xs 3-->
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <%= label_tag 'Model Name'%>
+        <div class="form-group">
+          <%= text_field_tag 'model name', nil, class: 'form-control' %>
+        </div>
+      </div><!--end-col-xs-4-->
+
+      <div class="col-xs-4">
+        <%= label_tag 'Reman Model Name' %>
+        <div class="form-group">
+          <%= text_field_tag 'reman model name',nil, class: 'form-control' %>
+        </div>
+      </div><!--end-col-xs-4-->
+
+      <div class="col-xs-4">
+        <%= label_tag 'Incoming Analysis or Rework:' %>
+        <div class="form-group">
+          <%= text_field_tag 'incoming analysis or rework:',nil, class: 'form-control' %>
+        </div>
+      </div><!--end-col-xs-4 -->
+    </div>
+
+    <div class="row">
+      <div class="col-xs-5">
+        IA Set Name:
+        <div class="form-group">
+          <%= select_tag 'iaset'%>
+        </div>
+      </div><!--end-col-xs-3-->
+
+      <div class="col-xs-5">
+        QC Set Name:
+        <div class="form-group">
+          <%= select_tag 'qcset'%>
+        </div>
+      </div><!--end-col-xs-3-->
+    </div><!--end row-->
+
+    <div class="row">
+      <div class="col-xs-1">
+        Workflow:
+      </div>
+
+      <div class="col-xs-2">
+        Incoming Analysis:
+      </div>
+
+      <div class="col-xs-1">
+        <%= check_box_tag 'incoming analysis', nil, false, class: 'checkbox' %>
+      </div>
+
+      <div class="col-xs-1">
+        Verification
+      </div>
+
+      <div class="col-xs-1">
+        <%= check_box_tag 'verification', nil, false, class: 'checkbox' %>
+      </div>
+
+      <div class="col-xs-1">
+        Rework
+      </div>
+
+      <div class="col-xs-1">
+        <%= check_box_tag 'rework', nil, false, class: 'checkbox' %>
+      </div>
+
+      <div class="col-xs-1">
+        QC
+      </div>
+
+      <div class="col-xs-1">
+        <%= check_box_tag 'qc', nil, false, class: 'checkbox' %>
+      </div>
+    </div><!-- row -->
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="row">
+          <div class="col-xs-4">
+            ATN:
+          </div>
+
+          <div class="col-xs-8">
+            <div class="form-group">
+              <%= text_field_tag 'atn', nil, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            Default Contention:
+          </div>
+
+          <div class="col-xs-8">
+            <div class="form-group">
+              <%= text_field_tag 'default contention', nil, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            Default Repair:
+          </div>
+
+          <div class="col-xs-8">
+            <div class="form-group">
+              <%= text_field_tag 'default repair', nil, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            Default Parts:
+          </div>
+
+          <div class="col-xs-8">
+            <div class="form-group">
+              <%= text_field_tag 'default parts' , nil, class: 'form-control',  placeholder: 'array of values' %> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="row">
+          <div class="col-xs-4" style="width:39%;">
+             Custom Fields: Incoming
+          </div>
+          <div class="col-xs-8" style="width:60%">
+            <div class="form-group">
+                <%= text_field_tag 'custom incoming' , nil, class: 'form-control',  placeholder: 'array of values' %>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="row">
+          <div class="col-xs-4" style="width:39%;">
+              Custom Fields: Rework
+          </div>
+          <div class="col-xs-8" style="width:60%;">
+            <div class="form-group">
+               <%= text_field_tag 'custom rework' , nil, class: 'form-control',  placeholder: 'array of values' %> 
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+     
+      <%= submit_tag "SAVE", class: 'btn btn-primary' %>
+      <%= button_tag "Cancel", class: 'btn-primary btn' %>
+     
+    </div>
+ 
+  <% end %>
+</div><!--end container-->
