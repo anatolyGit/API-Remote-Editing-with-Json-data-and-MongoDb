@@ -1,6 +1,6 @@
 <div class="container">
-  <%= form_tag 'http://54.236.251.158:3000/processes', authenticity_token: 'cf50faa3fe97702ca1ae' , remote: true , id: :setupForm do %>
  
+  <%= form_tag 'http://192.168.3.6:3003/processes', remote: true  do %>
     <div class="row">
       <div class="col-xs-12">
         <h2>Incoming Analysis / Rework Setup Screen</h2>
@@ -179,10 +179,8 @@
     </div>
 
     <div class="row">
-     
       <%= submit_tag "SAVE", class: 'btn btn-primary', id:'setupSave' %>
       <%= button_tag "Cancel", class: 'btn-primary btn' %>
-     
     </div>
  
   <% end %>

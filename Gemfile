@@ -26,6 +26,7 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem 'simple_form'
 gem 'rails4-autocomplete', '~> 1.0.7'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
