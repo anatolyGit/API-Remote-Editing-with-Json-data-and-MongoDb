@@ -1,8 +1,13 @@
 // Place all the styles related to the SetupPage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{padding-top:40px;}
+.ui-loader{display:none;}
 .row .col-h{padding-top:6px; padding-bottom:6px;}
 #ui-id-1{background-color:#e3e3e3; width:291px;left:245.5px;padding-left:12px;}
 #ui-id-1 .ui-menu-item{list-style: none outside none;}
 #ui-id-1 .ui-menu-item a{text-decoration: none;}
+#ui-id-2{background-color:#e3e3e3; width:291px;left:245.5px;padding-left:12px; height:120px; overflow:auto;}
+#ui-id-2 .ui-menu-item{list-style: none outside none;}
+#ui-id-2 .ui-menu-item a{text-decoration: none;}
 .form-group .ui-input-text .ui-helper-hidden-accessible {display:none;}

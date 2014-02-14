@@ -40,7 +40,35 @@ body {
   padding-bottom: 15px;
   background-color: #eee;
   border: 1px solid #ddd;
-*/				  
+*/          
+}
+
+.input-width-5 {
+  width: 5%;
+}
+
+.input-width-10 {
+  width: 10%;
+}
+
+.input-width-15 {
+  width: 15%;
+}
+
+.input-width-25 {
+  width: 25%;
+}
+
+.input-width-40 {
+  width: 40%;
+}
+
+.input-width-50 {
+  width: 50%;
+}
+
+.form-input-inline {
+  display: inline;
 }
 
 .container .navbar-header,
@@ -120,9 +148,17 @@ body {
   background-color: transparent !important;
 }
 
-#receiving button{position: absolute;
+#receiving #rework button{
+/*
+  position: absolute;
 top:150px;
-right:20px;}
+right:20px;
+*/
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
 
 .tab-content{border-style:solid;
 border-color:black;
@@ -141,6 +177,11 @@ width: 30px !important;
 
 
 th {padding-left: 10px;}
+
+.outline-solid-black {
+border-style:solid;
+border-color:black;
+}
 
 
 .bigBox {border-style:solid;
@@ -321,8 +362,10 @@ color:white;}
 .greenBoxRework ul li a{color: white;}
 
 
-#package button{ top:150px;
-position: absolute;}
+#package button{ 
+/*  top:150px;
+position: absolute;
+*/}
 
 
 .down {position: absolute;

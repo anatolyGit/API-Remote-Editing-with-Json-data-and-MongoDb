@@ -13,4 +13,17 @@ class AutoCompleteController < ApplicationController
 	    format.json { render :json => @models_hash }
     end
   end
+  def processname
+    @processes = JSON.parse(open(@remote_url+"processes").read)
+    @processes_hash = []
+    @processes.each do |b|
+        @processes_hash << { 
+            :name => b["process name"] 
+            
+        }
+    end
+    respond_to do |format|
+      format.json { render :json => @processes_hash }
+    end
+  end
 end

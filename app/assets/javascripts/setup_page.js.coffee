@@ -27,4 +27,19 @@ $ ->
   ).data("uiAutocomplete")._renderItem = (ul, item) ->
     $("<li></li>").data("item.uiAutocomplete", item).append("<a>" + item.name + "</a>").appendTo ul
 
+  $("#process_name").autocomplete(
+    minLength: 1
+    source: "auto_complete/processname"
+    focus: (event, ui) ->
+      $("#process_name").val ui.item.name
+      false
+
+    select: (event, ui) ->
+      $("#process_name").val ui.item.name
+      
+      false
+  ).data("uiAutocomplete")._renderItem = (ul, item) ->
+    $("<li></li>").data("item.uiAutocomplete", item).append("<a>" + item.name + "</a>").appendTo ul
+
   return
+
