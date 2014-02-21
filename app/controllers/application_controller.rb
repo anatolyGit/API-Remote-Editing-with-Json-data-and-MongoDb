@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :remote_url
   def remote_url
-    #@remote_url = 'http://localhost:3003/'
-    @remote_url = "http://54.236.251.158:3000/"
+    @remote_url = 'http://localhost:3003/'
+    #@remote_url = "http://54.236.251.158:3000/"
   end 
 end

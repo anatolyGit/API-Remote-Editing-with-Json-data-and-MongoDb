@@ -11,3 +11,6 @@ body{padding-top:40px;}
 #ui-id-2 .ui-menu-item{list-style: none outside none;}
 #ui-id-2 .ui-menu-item a{text-decoration: none;}
 .form-group .ui-input-text .ui-helper-hidden-accessible {display:none;}
+.col-md-6 .col-md-w{width:14%; display:flex;}
+.col-md-6 .col-md-w .ui-input-text input{width:100%;}
+.col-md-line{display:flex;}
